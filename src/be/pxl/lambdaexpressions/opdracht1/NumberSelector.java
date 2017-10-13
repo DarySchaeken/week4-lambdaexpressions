@@ -22,11 +22,11 @@ public class NumberSelector {
 	}
 	
 	public String showNumbersAbove(int bound){
-		return numberMachine.processNumbers((int number) -> {return bound < number;}); 
+		return numberMachine.processNumbers((int number) -> bound < number); 
 	}
 	
 	public String printHexNumbers(){
-		return numberMachine.convertNumbers((int number) -> {return Integer.toHexString(number);});
+		return numberMachine.convertNumbers((int number) -> Integer.toHexString(number));
 	}
 
 }
